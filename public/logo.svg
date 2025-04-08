@@ -1,0 +1,76 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with gradient -->
+  <circle cx="256" cy="256" r="246" fill="url(#backgroundGradient)" />
+  
+  <!-- Outer Ring -->
+  <circle cx="256" cy="256" r="238" stroke="#23235A" stroke-width="4" stroke-opacity="0.5" fill="none" />
+  <circle cx="256" cy="256" r="238" stroke="url(#ringGradient)" stroke-width="4" stroke-dasharray="24 8" stroke-linecap="round" fill="none">
+    <animateTransform 
+      attributeName="transform" 
+      attributeType="XML" 
+      type="rotate" 
+      from="0 256 256" 
+      to="360 256 256" 
+      dur="60s" 
+      repeatCount="indefinite" />
+  </circle>
+  
+  <!-- CPU/Processor Grid -->
+  <rect x="176" y="176" width="160" height="160" rx="12" fill="url(#cpuGradient)" />
+  
+  <!-- CPU Grid Lines -->
+  <path d="M176 216H336" stroke="#6366F1" stroke-width="2" stroke-opacity="0.3" />
+  <path d="M176 256H336" stroke="#6366F1" stroke-width="2" stroke-opacity="0.3" />
+  <path d="M176 296H336" stroke="#6366F1" stroke-width="2" stroke-opacity="0.3" />
+  <path d="M216 176V336" stroke="#6366F1" stroke-width="2" stroke-opacity="0.3" />
+  <path d="M256 176V336" stroke="#6366F1" stroke-width="2" stroke-opacity="0.3" />
+  <path d="M296 176V336" stroke="#6366F1" stroke-width="2" stroke-opacity="0.3" />
+  
+  <!-- Pulse Wave -->
+  <path d="M126 256H164L184 216L214 296L234 186L264 326L284 216L316 256H386" 
+        stroke="#10B981" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Data Points on Wave -->
+  <circle cx="164" cy="256" r="6" fill="#10B981" />
+  <circle cx="184" cy="216" r="6" fill="#10B981" />
+  <circle cx="214" cy="296" r="6" fill="#10B981" />
+  <circle cx="234" cy="186" r="6" fill="#10B981" />
+  <circle cx="264" cy="326" r="6" fill="#10B981" />
+  <circle cx="284" cy="216" r="6" fill="#10B981" />
+  <circle cx="316" cy="256" r="6" fill="#10B981" />
+  
+  <!-- Animated Ping Effect on Central Data Point -->
+  <circle cx="234" cy="186" r="12" fill="#10B981" opacity="0.5">
+    <animate attributeName="r" values="8;24;8" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Radial Lines -->
+  <g opacity="0.2">
+    <path d="M256 100V150" stroke="#F8FAFC" stroke-width="2" />
+    <path d="M256 362V412" stroke="#F8FAFC" stroke-width="2" />
+    <path d="M362 256H412" stroke="#F8FAFC" stroke-width="2" />
+    <path d="M100 256H150" stroke="#F8FAFC" stroke-width="2" />
+    <path d="M332 180L369 143" stroke="#F8FAFC" stroke-width="2" />
+    <path d="M143 369L180 332" stroke="#F8FAFC" stroke-width="2" />
+    <path d="M332 332L369 369" stroke="#F8FAFC" stroke-width="2" />
+    <path d="M143 143L180 180" stroke="#F8FAFC" stroke-width="2" />
+  </g>
+  
+  <!-- Definitions for gradients -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A" />
+      <stop offset="1" stop-color="#1E1E3A" />
+    </linearGradient>
+    <linearGradient id="ringGradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6366F1" />
+      <stop offset="0.5" stop-color="#8B5CF6" />
+      <stop offset="1" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="cpuGradient" x1="176" y1="176" x2="336" y2="336" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E1E3A" />
+      <stop offset="1" stop-color="#161628" />
+    </linearGradient>
+  </defs>
+</svg>
