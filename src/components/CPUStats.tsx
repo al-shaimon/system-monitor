@@ -277,7 +277,7 @@ export default function CPUStats({ cpu }: CPUProps) {
                       </div>
                       <div>
                         <p className="text-xs text-white/60">Speed</p>
-                        <p className="text-white font-medium">{cpu.speed} GHz</p>
+                        <p className="text-white font-medium">{cpu.speed / 1000} GHz</p>
                       </div>
                     </div>
                   </motion.div>

@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
           <table>
             <tr><th>Model</th><td>${cpuData.brand}</td></tr>
             <tr><th>Cores</th><td>${cpuData.cores}</td></tr>
-            <tr><th>Speed</th><td>${cpuData.speed} GHz</td></tr>
+            <tr><th>Speed</th><td>${cpuData.speed / 1000} GHz</td></tr>
           </table>
           
           <h2>Memory Information</h2>
